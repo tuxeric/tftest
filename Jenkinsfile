@@ -15,7 +15,7 @@ pipeline {
 		sh 'ps -ef'
 		sh 'id'
 		sh 'recink run terraform -vv || true'
-		sh 'sleep 300'
+		sh 'sleep 3000'
 	    }
 	}
     }
