@@ -9,6 +9,8 @@ pipeline {
 		npm_config_cache='npm-cache'
 	    }
 	    steps {
+		sh 'ps -ef'
+		sh 'id'
 		sh 'recink run terraform -vv'
 	    }
 	}
