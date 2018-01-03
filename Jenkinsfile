@@ -5,7 +5,7 @@ pipeline {
 	    agent {
 		docker {
 		    image 'dckr-node-v6.12.2-030118:v01'
-		    args '-u 0 -g 0'
+		    args '-u 0:0'
 		}
 	    }
 	    environment {
