@@ -4,7 +4,7 @@ pipeline {
 	stage ('Build') {
 	    agent {
 		docker {
-		    image 'dckr-node-v6.12.2-030118:v01'
+		    image 'dckr-node-v6.12.2-030118:v02'
 		    args '-u 0:0'
 		}
 	    }
