@@ -14,6 +14,7 @@ pipeline {
 	    steps {
 		sh 'ps -ef'
 		sh 'id'
+		sh 'echo $AWS_CREDS'
 		sh 'recink run terraform -vv || true'
 		sh 'sleep 3000'
 	    }
