@@ -37,7 +37,7 @@ ec2:
   root: './root'
   terraform:
     apply: true
-    destroy: true
+    destroy: false
     version: 0.11.0
     vars:
       region: 'eu-central-1'
