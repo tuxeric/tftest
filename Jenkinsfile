@@ -9,12 +9,13 @@ pipeline {
 		}
 	    }
 	    environment {
-		npm_config_cache='npm-cache'
+		AWS_ACCESS_KEY_ID = credentials(gcraciun_aws_access_key_id)
+		AWS_SECRET_ACCESS_KEY = credentials(gcraciun_aws_secret_access_key)
 	    }
 	    steps {
 		sh 'ps -ef'
 		sh 'id'
-		sh 'echo $AWS_CREDS'
+		sh 'echo $AWS_ACCESS_KEY_ID'
 		sh 'recink run terraform -vv || true'
 		sh 'sleep 3000'
 	    }
