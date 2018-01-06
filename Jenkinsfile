@@ -4,8 +4,8 @@ pipeline {
 	stage ('Build') {
 	    agent {
 		docker {
-		    image 'dckr-node-v6.12.2-030118:v02'
-		    args '-u 0:0'
+		    image 'dckr-node-v6.12.3-060118:v03'
+#		    args '-u 0:0'
 		}
 	    }
 	    environment {
@@ -17,7 +17,7 @@ pipeline {
 		sh 'id'
 		sh 'echo $AWS_ACCESS_KEY_ID'
 		sh 'recink run terraform -vv || true'
-		sh 'sleep 3000'
+#		sh 'sleep 3000'
 	    }
 	}
     }
