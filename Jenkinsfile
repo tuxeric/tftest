@@ -15,7 +15,7 @@ pipeline {
 		sh 'ps -ef'
 		sh 'id'
 		sh 'echo $AWS_ACCESS_KEY_ID'
-		sh 'recink run terraform -vv || true'
+		sh 'recink run terraform -vv'
 	    }
 	}
     }
