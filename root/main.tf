@@ -6,7 +6,7 @@ module "one" {
   source = "module-one/"
 
 server_port = "80"
-name = "unu"
+name = "unu - one"
 
 }
 
@@ -14,6 +14,6 @@ module "two" {
   source = "module-two/"
 
 server_port = "80"
-name = "doi"
+name = "doi - two"
 
 }
