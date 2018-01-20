@@ -4,7 +4,9 @@ pipeline {
 	stage ('Build') {
 	    agent {
 		docker {
-		    image 'dckr-node-v6.12.3-060118:v04'
+		    image 'dckr-node/v6.12.3:latest'
+		    registryUrl '722084099005.dkr.ecr.us-east-1.amazonaws.com'
+		    //registryCredentialsId 'myPredefinedCredentialsInJenkins'
 		}
 	    }
 	    environment {
