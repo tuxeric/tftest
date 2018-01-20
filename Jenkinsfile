@@ -5,7 +5,7 @@ pipeline {
 	    agent {
 		docker {
 		    image 'dckr-node/v6.12.3:latest'
-		    registryUrl '722084099005.dkr.ecr.us-east-1.amazonaws.com'
+		    registryUrl 'https://722084099005.dkr.ecr.us-east-1.amazonaws.com'
 		    //registryCredentialsId 'myPredefinedCredentialsInJenkins'
 		}
 	    }
