@@ -6,7 +6,7 @@ pipeline {
 		docker {
 		    image 'dckr-node/v6.12.3:latest'
 		    registryUrl 'https://722084099005.dkr.ecr.us-east-1.amazonaws.com'
-		    registryCredentialsId 'ecr:us-east-1:9d8b25b3-3200-4af9-a32d-8b1b9d543f6e'
+		    registryCredentialsId 'ecr:us-east-1:jenkins-ecr-get-login'
 		}
 	    }
 
